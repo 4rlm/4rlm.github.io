@@ -1,0 +1,152 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    /*text-align: justify;*/
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    background-color:#ECECEA;
+    line-height: 1.3;
+}
+
+/* == navigation starts == */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #558C89;
+    display: block;
+    width: 100%;
+    position: fixed;
+}
+
+nav .active {
+    background-color: #669794;
+    color: white;
+}
+
+nav li {
+    text-align: center;
+    border-bottom: 1px solid #44706d;
+    float: left;
+    width: 25%;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+}
+
+nav li:hover {
+    background-color: #88aeac;
+}
+/* == navigation ends == */
+
+
+/* == welcome section starts == */
+.welcome {
+    width: 100%;
+    float: left;
+    margin-top: 47px;
+    margin-right: 15px;
+    margin-left: 15px;
+    padding: 15px 20px 10px 20px;
+    background: #dde8e7;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    margin: 2px;
+    padding: 2px;
+}
+/* == welcome section ends == */
+
+
+/* == top section starts == */
+.top {
+    width: 100%;
+    float: left;
+    margin-top: -15px;
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-bottom: 7px;
+    padding: 0px 20px 15px 20px;
+    background: #dde8e7;
+    border-bottom: 1px solid #bbd1cf;
+    border-radius: 20px;
+}
+
+.left{
+    float: left;
+    width: 67%;
+    margin: 10px;
+    padding: 10px;
+    font-size: 1.25em;
+}
+
+.right {
+    width: 20%;
+    float: left;
+}
+
+.img {
+        float: left;
+        height: 210px;
+        border: 1px solid;
+        border-radius: 10px;
+
+}
+/* == top section ends == */
+
+.message {
+    width: 100%;
+    float: left;
+    margin-right: 15px;
+    margin-left: 15px;
+    padding: 5px 20px 5px 20px;
+    background: #ccdcdb;
+    border-bottom: 1px solid #bbd1cf;
+}
+
+
+/* == product_sample_1 starts == */
+.product_sample {
+    float: left;
+    margin: 7px 20px 3px 20px;
+    padding: 5px 20px 10px 20px;
+    background: #f3f3f2;
+    border: 1px solid #bbd1cf;
+    border-radius: 10px;
+}
+
+.product_sample .left {
+    margin-top: -10px;
+}
+
+.widget {
+    background-color: #efefee;
+    border-bottom: 1px solid #bbd1cf;
+}
+
+.product_sample .img {
+    margin-top: 17px;
+    margin-left: 30px;
+}
+
+
+
+
+
+
+
+
+
+/*style="height: 200px; width: 100%; border: 1px solid; border-radius: 5px;"*/
+
+
+/* == product_sample_1 starts == */
