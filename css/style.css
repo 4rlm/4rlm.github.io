@@ -2,11 +2,15 @@
 body{
     margin: 0;
     padding: 0;
-    /*text-align: justify;*/
     font-family: Verdana, Arial, Helvetica, sans-serif;
     font-size: 13px;
     background-color:#ECECEA;
     line-height: 1.3;
+}
+
+.container {
+    /*width: 90%;*/
+    margin: auto;
 }
 
 /* == navigation starts == */
@@ -53,8 +57,6 @@ nav li:hover {
     width: 100%;
     float: left;
     margin-top: 37px;
-    margin-right: 15px;
-    margin-left: 15px;
     padding: 15px 20px 10px 20px;
     background: #dde8e7;
 }
@@ -69,11 +71,9 @@ h1, h2, h3 {
 
 /* == top section starts == */
 .top {
-    width: 100%;
+    /*width: 100%;*/
     float: left;
     margin-top: -15px;
-    margin-right: 15px;
-    margin-left: 15px;
     margin-bottom: 7px;
     padding: 0px 20px 15px 20px;
     background: #dde8e7;
@@ -101,24 +101,26 @@ h1, h2, h3 {
         border-radius: 10px;
 
 }
+
 /* == top section ends == */
 
 .message {
     width: 100%;
     float: left;
-    margin-right: 15px;
-    margin-left: 15px;
     padding: 5px 20px 5px 20px;
     background: #ccdcdb;
-    border-bottom: 1px solid #bbd1cf;
+    border-top: 5px;
+    border-bottom: 5px solid #bbd1cf;
+    border-radius: 10px;
 }
 
 
 /* == product_sample_1 starts == */
 .product_sample {
     float: left;
-    margin: 7px 20px 3px 20px;
-    padding: 5px 20px 10px 20px;
+    margin-top: 7px;
+    margin-bottom: 3px;
+    padding: 5px 0 10px 0;
     background: #f3f3f2;
     border: 1px solid #bbd1cf;
     border-radius: 10px;
@@ -135,7 +137,6 @@ h1, h2, h3 {
 
 .product_sample .img {
     margin-top: 17px;
-    margin-left: 30px;
 }
 /* == product_sample_1 starts == */
 
@@ -163,6 +164,7 @@ h1, h2, h3 {
 
 
  /*==== Contact Page ====*/
+ /*Styling Forms*/
 
 .contact_form {
     width: 60%;
@@ -203,10 +205,6 @@ textarea {
     resize: none;
 }
 
-select {
-
-}
-
 input[type=submit] {
     background-color: #558C89;
     border: none;
@@ -216,3 +214,44 @@ input[type=submit] {
     margin: 4px 2px;
     cursor: pointer;
 }
+ /*==== Contact Page Ends====*/
+
+
+ /*==== Widgets Page Starts====*/
+ /*Styling Tables*/
+ table {
+     border-collapse: collapse;
+     border: 1px solid #558C89;
+     width: 80%;
+     margin: auto;
+     margin-bottom: 50px;
+ }
+
+table, th, td {
+   border: 1px solid #bbd1cf;
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+}
+
+th {
+    background-color: #558C89;
+    color: white;
+}
+
+td {
+    vertical-align: bottom;
+}
+
+tr:hover {
+    background-color: #f5f5f5
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2
+}
+
+
+ /*==== Widgets Page Ends====*/
