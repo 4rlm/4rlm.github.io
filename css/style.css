@@ -141,8 +141,6 @@ h1, h2, h3 {
 
 
  /*==== About Page ====*/
-
-
  /* == about_1 starts == */
  .about {
      float: left;
@@ -161,4 +159,60 @@ h1, h2, h3 {
      margin-top: 17px;
      margin-left: 30px;
  }
- /* == about_1 starts == */
+ /* == about_1 ends == */
+
+
+ /*==== Contact Page ====*/
+
+.contact_form {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    /*margin-top: 30px;*/
+    margin-bottom: 30px;
+    /*padding-top: 30px;*/
+
+}
+
+label {
+    font-weight: bold;
+    color: #558C89;
+    margin-top: 10px;
+    /*margin-bottom: 0px;
+    padding-top: 10px;*/
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #bbd1cf;
+    border-radius: 4px;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 150px;
+    resize: none;
+}
+
+select {
+
+}
+
+input[type=submit] {
+    background-color: #558C89;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
