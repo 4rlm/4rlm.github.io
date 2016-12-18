@@ -1,64 +1,78 @@
 
-body{
+html, body {
+    height: 88%;
     margin: 0;
     padding: 0;
-    font-family: Verdana, Arial, Helvetica, sans-serif;
-    font-size: 13px;
-    background-color:#ECECEA;
+    font-size: 14px;
+    font-family: Verdana;
+    background-color: #c0deed;
     line-height: 1.3;
-}
-
-.container {
-    /*width: 90%;*/
-    margin: auto;
+    color: #1a3a49;
 }
 
 /* == navigation starts == */
+
+nav {
+    position: fixed;
+    width: auto;
+    width: 100%;
+    margin-top: -50px;
+}
+
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    background-color: #558C89;
+    background-image: linear-gradient(#36b9ff, #6acbfc);
     display: block;
     width: 100%;
     position: fixed;
 }
 
 nav .active {
-    background-color: #669794;
+    background-image: linear-gradient(#6acbfc, #85d4fc);
     color: white;
 }
 
 nav li {
     text-align: center;
-    border-bottom: 1px solid #44706d;
     float: left;
-    width: 25%;
-    /*padding-bottom: 10px;*/
+    width: 24%;
     font-weight: bold;
+    border-bottom: 1px solid #47c1ff;
+    border-right: 1px solid #47c1ff;
+    border-left: 1px solid #47c1ff;
+    background-image: linear-gradient(#36b9ff, #6acbfc);
 }
 
 nav li a {
     display: block;
     color: white;
+    text-decoration: none;
     text-align: center;
     padding: 10px;
-    text-decoration: none;
 }
 
 nav li:hover {
-    background-color: #88aeac;
+    background-image: linear-gradient(#6acbfc, #85d4fc);
+    color: #eaf8ff;
 }
 /* == navigation ends == */
 
 
+.container {
+    margin: auto;
+    width: 98%;
+    min-height: 100%;
+    margin-top: 50px;
+    /*margin-bottom: -30px;*/
+}
+
+
 /* == welcome section starts == */
 .welcome {
-    width: 100%;
-    float: left;
-    margin-top: 37px;
-    padding: 15px 20px 10px 20px;
-    background: #dde8e7;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 h1, h2, h3 {
@@ -71,19 +85,18 @@ h1, h2, h3 {
 
 /* == top section starts == */
 .top {
-    /*width: 100%;*/
     float: left;
-    margin-top: -15px;
-    margin-bottom: 7px;
-    padding: 0px 20px 15px 20px;
-    background: #dde8e7;
+    /*margin-bottom: 7px;*/
+    /*padding: 0px 20px 15px 20px;*/
+    background: #f4f9fc;
     border-bottom: 1px solid #bbd1cf;
     border-radius: 20px;
+    box-shadow: 3px 3px 3px grey;
 }
 
 .left{
     float: left;
-    width: 67%;
+    width: 68%;
     margin: 10px;
     padding: 10px;
     font-size: 1.25em;
@@ -92,14 +105,25 @@ h1, h2, h3 {
 .right {
     width: 20%;
     float: left;
+    padding: 5px;
+    margin: 10px 0 10px 0;
 }
 
 .img {
-        float: left;
-        height: 210px;
-        border: 1px solid;
-        border-radius: 10px;
+    float: left;
+    height: 210px;
+    border: 1px solid;
+    border-radius: 10px;
+    box-shadow: 5px 5px 3px grey;
+}
 
+.img_vertical {
+    float: left;
+    height: 210px;
+    width: 200px;
+    border: 1px solid;
+    border-radius: 10px;
+    box-shadow: 5px 5px 3px grey;
 }
 
 /* == top section ends == */
@@ -107,11 +131,12 @@ h1, h2, h3 {
 .message {
     width: 100%;
     float: left;
+    margin: 10px -10px 10px -10px;
+    /*margin: auto;*/
     padding: 5px 20px 5px 20px;
-    background: #ccdcdb;
-    border-top: 5px;
+    background-image: linear-gradient(#6acbfc, #85d4fc);
+    color: white;
     border-bottom: 5px solid #bbd1cf;
-    border-radius: 10px;
 }
 
 
@@ -121,13 +146,28 @@ h1, h2, h3 {
     margin-top: 7px;
     margin-bottom: 3px;
     padding: 5px 0 10px 0;
-    background: #f3f3f2;
+    /*background: #f3f3f2;*/
+    background-color: #f4f9fc;
     border: 1px solid #bbd1cf;
     border-radius: 10px;
 }
 
 .product_sample .left {
     margin-top: -10px;
+}
+
+.home_table {
+    margin-top: -8px;
+}
+
+.home_table tr:first-child th {
+    background-image: linear-gradient(#0fa6dd, #0084b4);
+    color: white;
+    box-shadow: 3px 3px 3px grey;
+    border-bottom: 1px solid #015b7c;
+    border-radius: 0px 0px 5px 5px;
+    padding-top: -10px;
+    height: 25px;
 }
 
 .widget {
@@ -219,7 +259,7 @@ input[type=submit] {
 
  /*==== Widgets Page Starts====*/
  /*Styling Tables*/
- table {
+#products {
      border-collapse: collapse;
      border: 1px solid #558C89;
      width: 80%;
@@ -227,31 +267,67 @@ input[type=submit] {
      margin-bottom: 50px;
  }
 
-table, th, td {
-   border: 1px solid #bbd1cf;
-}
+#products tr:first-child th {
+     background-image: linear-gradient(#0fa6dd, #0084b4);
+     color: white;
+     box-shadow: 3px 3px 3px grey;
+     border-bottom: 1px solid #015b7c;
+ }
 
-th, td {
-    padding: 15px;
-    text-align: center;
-}
+ #products th, #products td {
+     padding: 15px;
+     text-align: center;
+ }
 
-th {
-    background-color: #558C89;
-    color: white;
-}
+ #products th {
+     background-color: #558C89;
+     color: white;
+ }
 
-td {
+#products td {
+    border: 1px solid #bbd1cf;
     vertical-align: bottom;
 }
 
-tr:hover {
-    background-color: #f5f5f5
+#products tr:hover {
+    background-color: #ffeab2
 }
 
-tr:nth-child(even) {
-    background-color: #f2f2f2
+#products tr:nth-child(even) {
+    background-color: white;
 }
-
 
  /*==== Widgets Page Ends====*/
+
+.about .left {
+    width: 60%;
+}
+
+.about .right img {
+    height: 200px;
+    width: 350px;
+}
+
+.about .right {
+    margin-top: -10px;
+    /*margin-bottom: 10px;
+    padding-bottom: 10px;*/
+
+}
+
+.about h4 {
+    background-image: linear-gradient(#0fa6dd, #0084b4);
+    color: white;
+    box-shadow: 3px 3px 3px grey;
+    border-bottom: 1px solid #015b7c;
+    border-radius: 0px 0px 5px 5px;
+    padding-top: 7px;
+    margin-top: -5px;
+    height: 30px;
+    text-align: center;
+}
+
+.contact_img {
+    float: left;
+    height: 210px;
+}
